@@ -4,8 +4,10 @@ import "fmt"
 
 func main() {
 
-	var p *int
-	fmt.Println("address: ", p)
-	fmt.Println("address: ", &p)
+	arr := []int{1, 2, 3, 4, 5}
+	s := arr[1:3:5]
 
+	fmt.Println("s = ", s)
+	fmt.Println(len(s))
+	fmt.Println(cap(s))
 }
