@@ -4,14 +4,10 @@ import "fmt"
 
 func main() {
 
-	arr := []int{1, 2, 3, 4, 5}
-	s := arr[1:3:5]
+	var map01 map[int]string
 
-	arr = append(arr, 888)
-	arr = append(arr, 888)
-	arr = append(arr, 888)
-	fmt.Println(arr)
-	fmt.Println("s = ", s)
-	fmt.Println(len(s))
-	fmt.Println(cap(s))
+	if map01 == nil {
+		fmt.Println("map is nil")
+	}
+
 }
