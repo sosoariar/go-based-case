@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var a int = 10
-	var p *int = &a
-	fmt.Println("a = ", *p)
+
+	var p *int
 	fmt.Println("address: ", p)
+	fmt.Println("address: ", &p)
 
 }
