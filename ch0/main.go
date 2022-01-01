@@ -45,4 +45,11 @@ func main() {
 	map05[2] = "value02"
 	map05[3] = "valye03"
 	fmt.Println("map05:", map05)
+
+	var map06 map[int]string = map[int]string{1: "v1", 2: "v2", 3: "v3"}
+	for k, v := range map06 {
+		fmt.Printf("key: %d -- valye: %q \n", k, v)
+	}
+	fmt.Println("------------------------end------------------------")
+
 }
