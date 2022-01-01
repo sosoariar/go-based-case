@@ -10,4 +10,5 @@ func main() {
 		fmt.Println("map is nil")
 	}
 
+	fmt.Println(len(map01))
 }
