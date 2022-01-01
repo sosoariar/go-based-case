@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Println(len(map01))
 
-	var map02 map[int]string
+	map02 := map[int]string{}
 
 	if map02 == nil {
 		fmt.Println("map02 is nil")
