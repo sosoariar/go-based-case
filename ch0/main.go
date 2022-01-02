@@ -52,4 +52,13 @@ func variable() {
 	fmt.Println(reflect.TypeOf(var5))
 	fmt.Println(reflect.TypeOf(var6))
 
+	// 一次性声明多个变量
+	var var7, var8 int
+	fmt.Println(reflect.TypeOf(var7))
+	fmt.Println(reflect.TypeOf(var8))
+
+	var var9, var10 = 10, "golang"
+	fmt.Println(reflect.TypeOf(var9))
+	fmt.Println(reflect.TypeOf(var10))
+
 }
