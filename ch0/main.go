@@ -22,4 +22,8 @@ func sum(num1 int, num2 int) (int, int) {
 
 func printEscapeCharacter() {
 	fmt.Println("escape\tCharacter")
+	fmt.Println("escape\nCharacter")
+	fmt.Println("escape\\Character")
+	fmt.Println("escape\"Character")
+	fmt.Println("escape\rCharacter")
 }
