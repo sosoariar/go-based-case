@@ -65,4 +65,10 @@ func variable() {
 	fmt.Println(reflect.TypeOf(var10))
 
 	fmt.Println("-----------------------------------------------")
+	var (
+		var11 int
+		var12 string
+	)
+	fmt.Println(reflect.TypeOf(var11))
+	fmt.Println(reflect.TypeOf(var12))
 }
