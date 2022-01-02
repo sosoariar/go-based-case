@@ -43,4 +43,13 @@ func variable() {
 	var var3 = "golang"
 	fmt.Println(reflect.TypeOf(var2))
 	fmt.Println(reflect.TypeOf(var3))
+
+	// 省略 var := 左侧的变量不应该是已经声明过的,否则会导致编译错误
+	var4 := 10.0
+	var5 := 10
+	var6 := "golang"
+	fmt.Println(reflect.TypeOf(var4))
+	fmt.Println(reflect.TypeOf(var5))
+	fmt.Println(reflect.TypeOf(var6))
+
 }
