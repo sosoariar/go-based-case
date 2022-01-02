@@ -8,4 +8,13 @@ func main() {
 
 func printHellWorld() {
 	fmt.Println("Hello world")
+	fmt.Println(sum(2, 1))
+}
+
+func sum(num1 int, num2 int) (int, int) {
+
+	sum := num1 + num2
+	sub := num1 - num2
+
+	return sum, sub
 }
