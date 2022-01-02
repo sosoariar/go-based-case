@@ -38,12 +38,14 @@ func variable() {
 	var1 = 100
 	fmt.Println("variables: %d", var1)
 
+	fmt.Println("-----------------------------------------------")
 	// 根据赋值自动判断变量类型
 	var var2 = 10.0
 	var var3 = "golang"
 	fmt.Println(reflect.TypeOf(var2))
 	fmt.Println(reflect.TypeOf(var3))
 
+	fmt.Println("-----------------------------------------------")
 	// 省略 var := 左侧的变量不应该是已经声明过的,否则会导致编译错误
 	var4 := 10.0
 	var5 := 10
@@ -53,6 +55,7 @@ func variable() {
 	fmt.Println(reflect.TypeOf(var6))
 
 	// 一次性声明多个变量
+	fmt.Println("-----------------------------------------------")
 	var var7, var8 int
 	fmt.Println(reflect.TypeOf(var7))
 	fmt.Println(reflect.TypeOf(var8))
@@ -61,4 +64,5 @@ func variable() {
 	fmt.Println(reflect.TypeOf(var9))
 	fmt.Println(reflect.TypeOf(var10))
 
+	fmt.Println("-----------------------------------------------")
 }
