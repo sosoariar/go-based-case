@@ -10,6 +10,7 @@ func printHellWorld() {
 	fmt.Println("Hello world")
 	fmt.Println(sum(2, 1))
 	printEscapeCharacter()
+	variable()
 }
 
 func sum(num1 int, num2 int) (int, int) {
@@ -26,4 +27,10 @@ func printEscapeCharacter() {
 	fmt.Println("escape\\Character")
 	fmt.Println("escape\"Character")
 	fmt.Println("escape\rCharacter")
+}
+
+func variable() {
+	var i int
+	i = 100
+	fmt.Println("variables: %d", i)
 }
