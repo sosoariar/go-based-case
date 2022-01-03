@@ -21,7 +21,27 @@ func main() {
 	//caseOfString()
 	//tranType()
 	//pointCase()
+	caseOfMethod()
+}
 
+func caseOfMethod() {
+	var1 := getSum
+	fmt.Println(var1)
+	fmt.Printf("%T \n", var1)
+
+	var2 := var1(10, 10)
+	fmt.Println(var2)
+
+	var3 := funCase(getSum, 10, 20)
+	fmt.Println(var3)
+}
+
+func getSum(num1 int, num2 int) int {
+	return num1 + num2
+}
+
+func funCase(funvar func(int, int) int, num1 int, num2 int) int {
+	return funvar(num1, num2)
 }
 
 func pointCase() {
