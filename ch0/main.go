@@ -6,17 +6,30 @@ import (
 )
 
 func main() {
-	printHellWorld()
+	//printHellWorld()
+	//fmt.Println(sumAndSub(2, 1))
+	//printEscapeCharacter()
+	//variable()
+	fmt.Printf("sum : %d", sum())
+}
+
+func sum() int {
+
+	var num1 = 1
+	var num2 = 1
+
+	var str1 = "Hello"
+	var str2 = "World"
+	fmt.Println(str1 + " " + str2)
+
+	return num1 + num2
 }
 
 func printHellWorld() {
 	fmt.Println("Hello world")
-	fmt.Println(sum(2, 1))
-	printEscapeCharacter()
-	variable()
 }
 
-func sum(num1 int, num2 int) (int, int) {
+func sumAndSub(num1 int, num2 int) (int, int) {
 
 	sum := num1 + num2
 	sub := num1 - num2
