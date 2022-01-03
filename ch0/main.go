@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"unsafe"
 )
 
 func main() {
@@ -10,7 +11,23 @@ func main() {
 	//fmt.Println(sumAndSub(2, 1))
 	//printEscapeCharacter()
 	//variable()
-	fmt.Printf("sum : %d", sum())
+	//fmt.Printf("sum : %d", sum())
+	sizeOfVar()
+}
+
+// 变量占用空间大小
+func sizeOfVar() {
+	var var1 int
+	var var2 int8
+	var var3 int16
+	var var4 int32
+	var var5 int64
+
+	fmt.Println("size of int : ", unsafe.Sizeof(var1))
+	fmt.Println("size of int8 : ", unsafe.Sizeof(var2))
+	fmt.Println("size of int16 : ", unsafe.Sizeof(var3))
+	fmt.Println("size of int32 : ", unsafe.Sizeof(var4))
+	fmt.Println("size of int64 : ", unsafe.Sizeof(var5))
 }
 
 func sum() int {
