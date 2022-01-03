@@ -54,6 +54,12 @@ func sizeOfFloat() {
 	fmt.Println(var4)
 	fmt.Println(var5)
 
+	var6 := 5.1234e2
+	var7 := 5.1234e2
+	var8 := 5.1234e-2
+	fmt.Println("var: ", var6)
+	fmt.Println("var: ", var7)
+	fmt.Println("var: ", var8)
 }
 
 func sum() int {
