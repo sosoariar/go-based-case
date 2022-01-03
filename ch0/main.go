@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+
 	//printHellWorld()
 	//fmt.Println(sumAndSub(2, 1))
 	//printEscapeCharacter()
@@ -14,7 +15,32 @@ func main() {
 	//fmt.Printf("sum : %d", sum())
 	//sizeOfint()
 	//sizeOfFloat()
-	sizeOfByte()
+	//sizeOfByte()
+	//caseOfBool()
+
+	caseOfString()
+
+}
+
+func caseOfString() {
+	var var1 = `\n \t \o \\ \"`
+	fmt.Println(var1)
+
+	var var2 = "Hello"
+	var2 += "World"
+	fmt.Println(var2)
+}
+
+func caseOfBool() {
+
+	var var1 bool
+	// 默认值
+	fmt.Println(var1)
+
+	var var2 = true
+	fmt.Println(var2)
+	fmt.Printf("%T size of int :  %d  \n", var2, unsafe.Sizeof(var2))
+
 }
 
 // 变量占用空间大小
