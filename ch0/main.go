@@ -42,6 +42,18 @@ func sizeOfint() {
 func sizeOfFloat() {
 	var var1 float32
 	fmt.Printf("%T size of int :  %d  \n", var1, unsafe.Sizeof(var1))
+
+	// 精度丢失
+	var var2 float32 = -123.0000001
+	var var3 float64 = -123.0000001
+	fmt.Println(var2)
+	fmt.Println(var3)
+
+	var4 := 1.23
+	var5 := .123
+	fmt.Println(var4)
+	fmt.Println(var5)
+
 }
 
 func sum() int {
