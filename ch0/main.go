@@ -26,14 +26,14 @@ func main() {
 
 func pointCase() {
 	var var1 int
-	fmt.Println("memory address: ", &var1)
-	fmt.Println("value: ", var1)
+	fmt.Println("var1 memory address: ", &var1)
+	fmt.Println("var1 value: ", var1)
 
 	// 指针变量存储内存地址
 	fmt.Println("--------------------------------------------------------")
 	var var2 *int
 	var2 = &var1
-	fmt.Println("value: ", var2)
+	fmt.Println("var2 value: ", var2)
 }
 
 func tranType() {
