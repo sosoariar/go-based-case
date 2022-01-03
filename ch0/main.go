@@ -44,13 +44,13 @@ func tranType() {
 	var str string
 
 	str = fmt.Sprintf("%d \n", var7)
-	fmt.Printf("str type %T str=%v \n", str, str)
+	fmt.Printf("the type of \"str\" : %T , the value of str: %v \n", str, str)
 
 	str = fmt.Sprintf("%f \n", var8)
-	fmt.Printf("str type %T str=%v \n", str, str)
+	fmt.Printf("the type of \"str\" : %T , the value of str: %v \n", str, str)
 
 	str = fmt.Sprintf("%t \n", var9)
-	fmt.Printf("str type %T str=%v", str, str)
+	fmt.Printf("the type of \"str\" : %T , the value of str: %v \n", str, str)
 }
 
 func caseOfString() {
