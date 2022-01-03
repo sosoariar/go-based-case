@@ -76,6 +76,13 @@ func sizeOfByte() {
 	fmt.Printf("%T size of int :  %c  \n", var3, var3)
 	fmt.Printf("%T size of int :  %c  \n", var4, var4)
 
+	// 输出对应的unicode 对应的字符
+	var var5 int = 22269
+	fmt.Printf("var5 : %c \n", var5)
+
+	var var6 = 10 + 'a'
+	fmt.Printf("var6 : %c", var6)
+
 }
 
 func sum() int {
