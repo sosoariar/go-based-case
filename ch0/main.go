@@ -17,9 +17,40 @@ func main() {
 	//sizeOfFloat()
 	//sizeOfByte()
 	//caseOfBool()
+	//caseOfString()
 
-	caseOfString()
+	tranType()
 
+}
+
+func tranType() {
+	var var1 int32 = 1
+	var var2 float32 = float32(var1)
+	var var3 int8 = int8(var1)
+	var var4 int64 = int64(var1)
+
+	fmt.Printf("var1= %T var2 = %T var3 = %T var4 = %T \n", var1, var2, var3, var4)
+
+	// 转换溢出处理方式
+	var var5 int64 = 999999
+	var var6 int8 = int8(var5)
+	fmt.Println(var6)
+
+	// 基本数据类型转成 string
+	var var7 int = 99
+	var var8 float64 = 1.234
+	var var9 bool = true
+	//var var10 byte = 'a'
+	var str string
+
+	str = fmt.Sprintf("%d \n", var7)
+	fmt.Printf("str type %T str=%v \n", str, str)
+
+	str = fmt.Sprintf("%f \n", var8)
+	fmt.Printf("str type %T str=%v \n", str, str)
+
+	str = fmt.Sprintf("%t \n", var9)
+	fmt.Printf("str type %T str=%v", str, str)
 }
 
 func caseOfString() {
