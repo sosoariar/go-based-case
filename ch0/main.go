@@ -26,7 +26,8 @@ func main() {
 
 func pointCase() {
 	var var1 int
-	fmt.Println(&var1)
+	fmt.Println("memory address: ", &var1)
+	fmt.Println("value: ", var1)
 }
 
 func tranType() {
