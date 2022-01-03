@@ -30,6 +30,7 @@ func pointCase() {
 	fmt.Println("value: ", var1)
 
 	// 指针变量存储内存地址
+	fmt.Println("--------------------------------------------------------")
 	var var2 *int
 	var2 = &var1
 	fmt.Println("value: ", var2)
