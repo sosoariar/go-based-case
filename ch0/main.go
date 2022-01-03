@@ -14,6 +14,7 @@ func main() {
 	//fmt.Printf("sum : %d", sum())
 	//sizeOfint()
 	//sizeOfFloat()
+	sizeOfByte()
 }
 
 // 变量占用空间大小
@@ -60,15 +61,20 @@ func sizeOfFloat() {
 	fmt.Println("var: ", var6)
 	fmt.Println("var: ", var7)
 	fmt.Println("var: ", var8)
+
 }
 
 func sizeOfByte() {
 
 	var var1 byte = 'a'
 	var var2 byte = '0'
+	var var3 int = '陈'
+	var var4 = '陈'
 
 	fmt.Println("var1 = : ", var1)
 	fmt.Println("var2 = : ", var2)
+	fmt.Printf("%T size of int :  %c  \n", var3, var3)
+	fmt.Printf("%T size of int :  %c  \n", var4, var4)
 
 }
 
