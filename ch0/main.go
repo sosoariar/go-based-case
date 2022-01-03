@@ -34,6 +34,13 @@ func pointCase() {
 	var var2 *int
 	var2 = &var1
 	fmt.Println("var2 value: ", var2)
+	fmt.Println("var2 memory address: ", &var2)
+
+	// 通过地址获取变量后,修改值
+	fmt.Println("--------------------------------------------------------")
+	*var2 = 10
+	fmt.Println("var1 value: ", var1)
+
 }
 
 func tranType() {
