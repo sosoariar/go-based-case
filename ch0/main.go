@@ -24,6 +24,9 @@ func main() {
 	caseOfMethod()
 }
 
+func init() {
+	fmt.Println("init")
+}
 func caseOfMethod() {
 	var1 := getSum
 	fmt.Println(var1)
