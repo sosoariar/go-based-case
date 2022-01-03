@@ -19,9 +19,14 @@ func main() {
 	//sizeOfByte()
 	//caseOfBool()
 	//caseOfString()
+	//tranType()
+	pointCase()
 
-	tranType()
+}
 
+func pointCase() {
+	var var1 int
+	fmt.Println(&var1)
 }
 
 func tranType() {
