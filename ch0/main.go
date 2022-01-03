@@ -12,22 +12,36 @@ func main() {
 	//printEscapeCharacter()
 	//variable()
 	//fmt.Printf("sum : %d", sum())
-	sizeOfVar()
+	//sizeOfint()
+	sizeOfFloat()
 }
 
 // 变量占用空间大小
-func sizeOfVar() {
+func sizeOfint() {
+
 	var var1 int
 	var var2 int8
 	var var3 int16
 	var var4 int32
 	var var5 int64
+	var var6 = 1
+	var var7 = 128
+	var var8 = 65537
 
-	fmt.Println("size of int : ", unsafe.Sizeof(var1))
-	fmt.Println("size of int8 : ", unsafe.Sizeof(var2))
-	fmt.Println("size of int16 : ", unsafe.Sizeof(var3))
-	fmt.Println("size of int32 : ", unsafe.Sizeof(var4))
-	fmt.Println("size of int64 : ", unsafe.Sizeof(var5))
+	fmt.Printf("%T size of int :  %d  \n", var1, unsafe.Sizeof(var1))
+	fmt.Printf("%T size of int :  %d  \n", var2, unsafe.Sizeof(var2))
+	fmt.Printf("%T size of int :  %d  \n", var3, unsafe.Sizeof(var3))
+	fmt.Printf("%T size of int :  %d  \n", var4, unsafe.Sizeof(var4))
+	fmt.Printf("%T size of int :  %d  \n", var5, unsafe.Sizeof(var5))
+	fmt.Printf("%T size of int :  %d  \n", var6, unsafe.Sizeof(var6))
+	fmt.Printf("%T size of int :  %d  \n", var7, unsafe.Sizeof(var7))
+	fmt.Printf("%T size of int :  %d  \n", var8, unsafe.Sizeof(var8))
+
+}
+
+func sizeOfFloat() {
+	var var1 float32
+	fmt.Printf("%T size of int :  %d  \n", var1, unsafe.Sizeof(var1))
 }
 
 func sum() int {
