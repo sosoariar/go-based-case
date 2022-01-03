@@ -81,8 +81,10 @@ func sizeOfByte() {
 	fmt.Printf("var5 : %c \n", var5)
 
 	var var6 = 10 + 'a'
-	fmt.Printf("var6 : %c", var6)
+	fmt.Printf("var6 : %c \n", var6)
 
+	var var7 = 10 + 'a'
+	fmt.Println("var7 : ", var7)
 }
 
 func sum() int {
