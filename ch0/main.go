@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"strconv"
 	"unsafe"
 )
 
@@ -51,6 +52,12 @@ func tranType() {
 
 	str = fmt.Sprintf("%t \n", var9)
 	fmt.Printf("the type of \"str\" : %T , the value of str: %v \n", str, str)
+
+	// 第二种类型转换
+	var var10 int = 99
+	str = strconv.FormatInt(int64(var10), 10)
+	fmt.Printf("the type of \"str\" : %T , the value of str: %v \n", str, str)
+
 }
 
 func caseOfString() {
