@@ -20,7 +20,7 @@ func main() {
 	//caseOfBool()
 	//caseOfString()
 	//tranType()
-	pointCase()
+	//pointCase()
 
 }
 
