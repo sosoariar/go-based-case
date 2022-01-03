@@ -58,6 +58,12 @@ func tranType() {
 	str = strconv.FormatInt(int64(var10), 10)
 	fmt.Printf("the type of \"str\" : %T , the value of str: %v \n", str, str)
 
+	// 第三种类型转换
+	var var11 string = "true"
+	var var12 bool
+	var12, _ = strconv.ParseBool(var11) // 只想获得 value bool , 不想获得 err 使用下划线忽略返回值
+	fmt.Printf("the type of \"var12\" : %T , the value of var12: %v \n", var12, var12)
+
 }
 
 func caseOfString() {
