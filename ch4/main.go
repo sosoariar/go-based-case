@@ -19,5 +19,7 @@ func main() {
 	fmt.Println(p3)
 
 	var p4 *Person = new(Person)
+	(*p4).Name = "C++"
+	(*p4).Age = 30
 	fmt.Println(p4)
 }
