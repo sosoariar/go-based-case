@@ -3,7 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	fun01()
+	//fun01()
+	fun02()
+}
+
+func fun02() {
+	var1 := 011
+	fmt.Printf("十进制 %d \n", var1)
+	fmt.Printf("二进制 %b \n", var1)
+	fmt.Printf("二进制 %b \n", var1)
+
+	var2 := int64(0xdeadbeef)
+	fmt.Printf("%d \n", var2)
 }
 
 func fun01() {
