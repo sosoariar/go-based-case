@@ -18,4 +18,6 @@ func main() {
 	p3 := Person{"Java语言", 25}
 	fmt.Println(p3)
 
+	var p4 *Person = new(Person)
+	fmt.Println(p4)
 }
