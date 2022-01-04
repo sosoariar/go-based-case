@@ -22,4 +22,5 @@ func fun01() {
 			fmt.Println(i)
 		}
 	}
+
 }
