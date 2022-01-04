@@ -13,4 +13,5 @@ func fun01() {
 	fmt.Printf("%08b\n", x)
 	fmt.Printf("%08b\n", y)
 
+	fmt.Printf("%08b\n", x&y)
 }
