@@ -20,6 +20,6 @@ func main() {
 
 	var p4 *Person = new(Person)
 	(*p4).Name = "C++"
-	(*p4).Age = 30
+	p4.Age = 30
 	fmt.Println(p4)
 }
