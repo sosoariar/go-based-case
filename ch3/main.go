@@ -30,6 +30,13 @@ func fun03() {
 	var z float64
 	fmt.Println(z, -z, 1/z, -1/z, z/z)
 
+	// 判断其参数是否为非数值
+	fmt.Println(math.IsNaN(z))
+
+	// 用于返回非数值
+	nan := math.NaN()
+	fmt.Println(nan == nan, nan < nan, nan > nan)
+
 }
 
 func fun02() {
