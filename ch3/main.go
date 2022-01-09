@@ -22,6 +22,7 @@ func main() {
 	字符串是不可变的字节序列,包含任意数据
 	文本字符串被解读成按 UTF-8 编码的 Unicode 序列
 	字符串中 第i个字节不一定就是第 i 个字符,因为 UTF-8 是变长字符集, 英文占两个字节,中文占三个字节
+	天然适合保存单个文字的数据类型是 int32, 为 Go 使用, rune 类型作为 int32 类型的别名
 */
 func fun05() {
 	var1 := "Hello World"
@@ -39,6 +40,9 @@ func fun05() {
 	fmt.Println(var2)
 	fmt.Println(var3)
 
+	// 转义字符
+	fmt.Println("\a")
+	fmt.Println("\v")
 	// 访问字符下标越界
 	//fmt.Println(var1[len(var1)])
 
