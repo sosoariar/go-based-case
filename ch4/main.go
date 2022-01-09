@@ -17,7 +17,23 @@ func main() {
 	//fun02()
 	//fun03()
 	//fun04()
-	fun05()
+	//fun05()
+	fun06()
+}
+
+func fun06() {
+
+	args1 := map[string]int{
+		"alice":   31,
+		"charlie": 34,
+	}
+	fmt.Println(args1)
+
+	args2 := make(map[string]int)
+	args2["alice"] = 31
+	args2["charlie"] = 34
+	fmt.Println(args2)
+
 }
 
 func fun05() {
