@@ -3,6 +3,7 @@ package main
 import (
 	"crypto/sha256"
 	"fmt"
+	"time"
 )
 
 /*
@@ -12,13 +13,24 @@ import (
 3. map
 4. 结构体
 */
+
+type Employee struct {
+	ID        int
+	Name      string
+	Address   string
+	DoB       time.Time
+	Position  string
+	Salary    int
+	ManagerID int
+}
+
 func main() {
 	//fun01()
 	//fun02()
 	//fun03()
 	//fun04()
 	//fun05()
-	fun06()
+	//fun06()
 }
 
 func fun06() {
