@@ -14,7 +14,27 @@ func main() {
 	//fun01()
 	//fun02()
 	//fun03()
-	fun04()
+	//fun04()
+	fun05()
+}
+
+/*
+	字符串是不可变的字节序列,包含任意数据
+	文本字符串被解读成按 UTF-8 编码的 Unicode 序列
+	字符串中 第i个字节不一定就是第 i 个字符,因为 UTF-8 是变长字符集, 英文占两个字节,中文占三个字节
+*/
+func fun05() {
+	var1 := "Hello World"
+
+	fmt.Println(len(var1))
+	fmt.Println(var1[0], var1[7])
+	fmt.Println(var1[:5])
+	fmt.Println(var1[7:])
+	fmt.Println(var1[:])
+
+	// 访问字符下标越界
+	//fmt.Println(var1[len(var1)])
+
 }
 
 // Go具备两种大小的复数complex64和complex128，二者分别由float32和float64构成。
