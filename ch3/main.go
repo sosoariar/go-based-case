@@ -19,7 +19,7 @@ func main() {
 	//fun03()
 	//fun04()
 	//fun05()
-	func06()
+	//func06()
 }
 
 /**
