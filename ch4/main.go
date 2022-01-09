@@ -35,11 +35,17 @@ func main() {
 }
 
 func fun07() {
+
 	var dilbert Employee
 	dilbert.ID = 1101
 	dilbert.Name = "Go 语言程序设计"
 	dilbert.Address = "北京清华大学"
 	fmt.Println(dilbert)
+
+	position := &dilbert.Position
+	*position = "Senior " + *position
+	fmt.Println(dilbert)
+
 }
 
 func fun06() {
