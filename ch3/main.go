@@ -5,6 +5,7 @@ import (
 	"math"
 	"math/cmplx"
 	"strconv"
+	"time"
 	"unicode/utf8"
 )
 
@@ -25,12 +26,24 @@ func main() {
 
  */
 func func06() {
-	// 将整数转换为字符串
+
+	fmt.Println("---------------------  将整数转换为字符串 ------------------")
 	var1 := 123
 	var2 := fmt.Sprintf("%d", var1)
 	fmt.Printf("Type: %T, value: %d \n", var1, var1)
 	fmt.Printf("Type: %T, value: %s \n", var2, var2)
 	fmt.Printf("Type: %T, value: %s \n", strconv.Itoa(var1), strconv.Itoa(var1))
+
+	fmt.Println("--------------------- 按不同的进位制格式化数字 ------------------")
+	fmt.Println(strconv.FormatInt(int64(var1), 2))
+
+	fmt.Println("--------------------- 具名类型 ------------------")
+	// 同时指定类型和值, time.Duration 是一种具名类型
+	const noDelay time.Duration = 0
+	const timeout = 5 * time.Minute
+	fmt.Printf("%T %[1]v \n", time.Minute)
+	fmt.Printf("%T %[1]v \n", noDelay)
+	fmt.Printf("%T %[1]v \n", timeout)
 }
 
 /*
