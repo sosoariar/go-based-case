@@ -15,7 +15,26 @@ import (
 func main() {
 	//fun01()
 	//fun02()
-	fun03()
+	//fun03()
+	//fun04()
+	fun05()
+}
+
+func fun05() {
+	var runes []rune
+	for _, r := range "Hello,World" {
+		runes = append(runes, r)
+	}
+	fmt.Printf("%q\n", runes)
+}
+
+func fun04() {
+	months := [...]string{1: "jan", 2: "fer", 3: "march", 4: "april", 5: "may", 6: "june", 7: "july", 8: "august", 9: "september", 10: "october", 11: "november", 12: "december"}
+	Q2 := months[4:7]
+	summer := months[6:9]
+	fmt.Printf("%T , cap %d \n", Q2, cap(Q2))
+	fmt.Printf("%T , cap %d \n", summer, cap(summer))
+	fmt.Println(summer)
 }
 
 func fun03() {
