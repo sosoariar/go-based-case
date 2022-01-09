@@ -44,6 +44,9 @@ func func06() {
 	fmt.Printf("%T %[1]v \n", time.Minute)
 	fmt.Printf("%T %[1]v \n", noDelay)
 	fmt.Printf("%T %[1]v \n", timeout)
+
+	fmt.Println("--------------------- 常量类型生成器 iota ------------------")
+
 }
 
 /*
