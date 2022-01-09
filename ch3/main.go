@@ -28,6 +28,7 @@ func fun05() {
 
 	fmt.Println(len(var1))
 	fmt.Println(var1[0], var1[7])
+	// : 两边的默认值
 	fmt.Println(var1[:5])
 	fmt.Println(var1[7:])
 	fmt.Println(var1[:])
