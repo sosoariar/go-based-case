@@ -18,10 +18,12 @@ func main() {
 
 // Go具备两种大小的复数complex64和complex128，二者分别由float32和float64构成。
 func fun04() {
-	var var1 complex64 = complex(1, 2)
+	var var1 complex128 = complex(1, 2)
 	var var2 complex128 = complex(3, 4)
 	fmt.Println(var1)
 	fmt.Println(var2)
+	fmt.Println(real(var1 * var2))
+	fmt.Println(imag(var1 * var2))
 }
 
 func fun03() {
