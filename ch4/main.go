@@ -31,6 +31,15 @@ func main() {
 	//fun04()
 	//fun05()
 	//fun06()
+	fun07()
+}
+
+func fun07() {
+	var dilbert Employee
+	dilbert.ID = 1101
+	dilbert.Name = "Go 语言程序设计"
+	dilbert.Address = "北京清华大学"
+	fmt.Println(dilbert)
 }
 
 func fun06() {
