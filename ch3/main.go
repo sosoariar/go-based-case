@@ -12,7 +12,15 @@ const Planck = 6.62606957e23
 func main() {
 	//fun01()
 	//fun02()
-	fun03()
+	//fun03()
+	fun04()
+}
+
+// Go具备两种大小的复数complex64和complex128，二者分别由float32和float64构成。
+func fun04() {
+	var var1 complex64 = complex(1, 2)
+
+	fmt.Println(var1)
 }
 
 func fun03() {
