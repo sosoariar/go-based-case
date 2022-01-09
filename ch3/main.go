@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"math/cmplx"
+	"strconv"
 	"unicode/utf8"
 )
 
@@ -16,7 +17,20 @@ func main() {
 	//fun02()
 	//fun03()
 	//fun04()
-	fun05()
+	//fun05()
+	func06()
+}
+
+/**
+
+ */
+func func06() {
+	// 将整数转换为字符串
+	var1 := 123
+	var2 := fmt.Sprintf("%d", var1)
+	fmt.Printf("Type: %T, value: %d \n", var1, var1)
+	fmt.Printf("Type: %T, value: %s \n", var2, var2)
+	fmt.Printf("Type: %T, value: %s \n", strconv.Itoa(var1), strconv.Itoa(var1))
 }
 
 /*
