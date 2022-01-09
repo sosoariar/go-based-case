@@ -33,6 +33,12 @@ func fun05() {
 	fmt.Println(var1[7:])
 	fmt.Println(var1[:])
 
+	var2 := "left foot"
+	var3 := var2
+	var2 += ", right foot"
+	fmt.Println(var2)
+	fmt.Println(var3)
+
 	// 访问字符下标越界
 	//fmt.Println(var1[len(var1)])
 
