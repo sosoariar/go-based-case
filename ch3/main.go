@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"math/cmplx"
+	"unicode/utf8"
 )
 
 const e = 2.71828
@@ -48,6 +49,17 @@ func fun05() {
 
 	// UTF-8 编码
 	fmt.Println("\u4e16\u754c")
+
+	var4 := "go语言程序设计"
+	fmt.Println(len(var4))
+	fmt.Println(utf8.RuneCountInString(var4))
+
+	// 字符串可以和字节 slice 相互转换
+	var5 := "abc"
+	var6 := []byte(var5) // 会分配新的字节数组,以字节为单元填入
+	var7 := string(var6)
+	fmt.Println(var6)
+	fmt.Println(var7)
 }
 
 // Go具备两种大小的复数complex64和complex128，二者分别由float32和float64构成。
