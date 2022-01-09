@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/cmplx"
 )
 
 const e = 2.71828
@@ -18,12 +19,22 @@ func main() {
 
 // Go具备两种大小的复数complex64和complex128，二者分别由float32和float64构成。
 func fun04() {
+
 	var var1 complex128 = complex(1, 2)
 	var var2 complex128 = complex(3, 4)
 	fmt.Println(var1)
 	fmt.Println(var2)
 	fmt.Println(real(var1 * var2))
 	fmt.Println(imag(var1 * var2))
+
+	// math/cmplx 包提供了复数运算所需的库函数
+	var3 := 1 + 2i
+	var4 := 3 + 4i
+	fmt.Println(var3)
+	fmt.Println(var4)
+	fmt.Println(cmplx.Sqrt(-1))
+	fmt.Println(!true)
+
 }
 
 func fun03() {
