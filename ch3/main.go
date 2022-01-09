@@ -46,6 +46,8 @@ func fun05() {
 	// 访问字符下标越界
 	//fmt.Println(var1[len(var1)])
 
+	// UTF-8 编码
+	fmt.Println("\u4e16\u754c")
 }
 
 // Go具备两种大小的复数complex64和complex128，二者分别由float32和float64构成。
