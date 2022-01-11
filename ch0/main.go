@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/q1mi/hello"
 	"reflect"
 	"strconv"
 	"unsafe"
@@ -21,7 +22,12 @@ func main() {
 	//caseOfString()
 	//tranType()
 	//pointCase()
-	caseOfMethod()
+	//caseOfMethod()
+	fun01()
+}
+
+func fun01() {
+	hello.SayHi()
 }
 
 func init() {
