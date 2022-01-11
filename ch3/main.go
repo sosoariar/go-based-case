@@ -4,6 +4,17 @@ import (
 	"fmt"
 )
 
+// 常量定义方式
+const (
+	n1 = iota
+	n2
+	n3
+	n4 = iota
+)
+const pi = 3.14159
+const e = 2.7
+const n5 = iota
+
 func main() {
 	case01()
 }
@@ -27,4 +38,14 @@ func case01() {
 	)
 	fmt.Println(var6, var7, var8, var9)
 
+	// 类型推断
+	var var10 = "gohoer"
+	fmt.Println(var10)
+
+	// 短声明方式
+	var11 := "go Programer"
+	fmt.Println(var11)
+
+	// 常量
+	fmt.Println(pi, e, n1, n4, n5)
 }
