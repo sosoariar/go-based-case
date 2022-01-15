@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	defer fmt.Println("function end")
 	fmt.Println(addSum(1, 2, 3, 4, 5))
 	fmt.Println(addSum(10, 20, 30, 40, 50))
 }
