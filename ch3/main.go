@@ -16,7 +16,7 @@ const e = 2.7
 const n5 = iota
 
 func main() {
-	case04()
+	case05()
 }
 
 func case01() {
@@ -77,4 +77,18 @@ func case04() {
 	fmt.Printf("type of var01 : %T ,value of var01 %d \n", var01, var01)
 	fmt.Printf("type of var02 : %T ,value of var01 %d \n", var02, var02)
 
+	var var03 = "this a string"
+	for i := 0; i < len(var03); i++ {
+		fmt.Printf("%c ", var03[i])
+	}
+}
+
+func case05() {
+	if score := 99; score >= 90 {
+		fmt.Println("A")
+	} else if score > 75 {
+		fmt.Println("B")
+	} else {
+		fmt.Println("C")
+	}
 }
