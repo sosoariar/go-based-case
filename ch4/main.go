@@ -40,6 +40,12 @@ func fun08() {
 	var03 := var02[1:4] //左闭右开的结果
 	fmt.Println(var03)
 
+	var03 = var02[1:]
+	fmt.Println(var03)
+
+	var03 = var02[:4]
+	fmt.Println(var03)
+
 }
 
 func fun01() {
