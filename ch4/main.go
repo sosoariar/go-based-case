@@ -52,6 +52,15 @@ func fun01() {
 	var mapArray = [...]int{1: 11, 3: 13, 7: 17}
 	fmt.Println(mapArray)
 
+	fmt.Println("------------- 索引遍历方式 -------------")
+	for i := 0; i < len(mapArray); i++ {
+		fmt.Printf("%d ", mapArray[i])
+	}
+
+	for index, value := range mapArray {
+		fmt.Printf("index: %d, value: %d \n", index, value)
+	}
+
 }
 
 func fun02() {
