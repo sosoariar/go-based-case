@@ -115,12 +115,17 @@ func case06() {
 }
 
 func case07() {
-	var01 := 3
-	if var01 == 1 {
+	var01 := 8
+	switch var01 {
+	case 1:
 		fmt.Println("A")
-	} else if var01 == 2 {
+	case 2:
 		fmt.Println("B")
-	} else {
+	case 3:
 		fmt.Println("C")
+	case var01 >= 4:
+		fmt.Println("D")
+	default:
+		fmt.Println("无效输入")
 	}
 }
