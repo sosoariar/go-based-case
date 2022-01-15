@@ -25,13 +25,21 @@ type Employee struct {
 }
 
 func main() {
-	fun01()
-	//fun02()
-	//fun03()
-	//fun04()
-	//fun05()
-	//fun06()
-	//fun07()
+	fun08()
+
+}
+
+func fun08() {
+
+	var var01 = []string{}
+	var var02 = [5]int{1, 2, 3, 4, 5}
+
+	fmt.Printf("the type of []string{} %T,  \n", var01)
+	fmt.Printf("the type of []string{} %T,  \n", var02)
+
+	var03 := var02[1:4]
+	fmt.Println(var03)
+
 }
 
 func fun01() {
