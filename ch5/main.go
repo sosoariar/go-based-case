@@ -14,3 +14,8 @@ func addSum(argArr ...int) int {
 	}
 	return ret
 }
+
+// 函数不能重载,且多个参数时,可变参数一定要放在最后
+/*func addSum(arg01 int,argArr ... int) int{
+
+}*/
