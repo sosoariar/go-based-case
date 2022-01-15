@@ -42,6 +42,7 @@ func fun09() {
 		var01 = append(var01, i)
 	}
 
+	var01 = append(var01, 2, 3, 4)
 	fmt.Println(var01)
 
 }
