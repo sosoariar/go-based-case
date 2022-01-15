@@ -29,4 +29,4 @@ byte 是 int8  的别名
 
 rune 是 int32 的别名
 
-
+Go 语言只要 for 表达式
