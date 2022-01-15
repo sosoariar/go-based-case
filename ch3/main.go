@@ -99,4 +99,9 @@ func case06() {
 		fmt.Println(i)
 	}
 
+	var var01 = 0
+	for ; var01 < 10; var01++ {
+		fmt.Println(var01)
+	}
+
 }
