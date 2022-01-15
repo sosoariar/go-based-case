@@ -17,7 +17,8 @@ const n5 = iota
 
 func main() {
 	//case01()
-	case02()
+	//case02()
+	case03()
 }
 
 func case01() {
@@ -60,4 +61,12 @@ func case02() {
 	fmt.Printf("八进制(octal)表示方式:  %o \n", var01)
 	fmt.Printf("十进制(decimal)表示方式: %d \n", var01)
 	fmt.Printf("十六进制(hex)表示方式: %x \n", var01)
+}
+
+// 转义字符
+func case03() {
+	var01 := "Hello World"
+	fmt.Println(var01)
+	var02 := "D:\\WorkSpace\\Go\\go-based-case"
+	fmt.Println(var02)
 }
