@@ -34,7 +34,7 @@ func fun11() {
 	var var01 map[string]int
 	fmt.Println(var01 == nil)
 
-	fmt.Println("--------- make 初始化方式 -----------")
+	fmt.Println("--------- make 初始化方式 一 -----------")
 	var01 = make(map[string]int, 10)
 	fmt.Println(var01 == nil)
 
@@ -42,11 +42,21 @@ func fun11() {
 	var01["java02"] = 99
 	fmt.Println(var01)
 
+	fmt.Println("--------- make 初始化方式 二 -----------")
 	var02 := map[int]bool{
 		1: true,
 		2: false,
 	}
 	fmt.Println(var02)
+
+	fmt.Println("--------- 判断某个键是否存在 -----------")
+	value, ok := var02[3]
+	if ok {
+		fmt.Println("容器中存在:", value)
+	} else {
+		fmt.Println("不存在此元素")
+	}
+
 }
 
 func fun09() {
