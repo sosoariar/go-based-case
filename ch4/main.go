@@ -46,6 +46,9 @@ func fun08() {
 	var03 = var02[:4]
 	fmt.Println(var03)
 
+	var03 = var02[0:len(var02)]
+	fmt.Println(var03)
+
 }
 
 func fun01() {
