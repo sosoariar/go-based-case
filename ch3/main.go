@@ -16,7 +16,7 @@ const e = 2.7
 const n5 = iota
 
 func main() {
-	case05()
+	case06()
 }
 
 func case01() {
@@ -91,4 +91,12 @@ func case05() {
 	} else {
 		fmt.Println("C")
 	}
+}
+
+func case06() {
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
 }
