@@ -25,7 +25,24 @@ type Employee struct {
 }
 
 func main() {
-	fun08()
+	fun09()
+}
+
+func fun09() {
+
+	var var01 []int //此时并没有申请内存
+	fmt.Println(var01)
+
+	var01 = append(var01, 1)
+	var01 = append(var01, 1)
+	var01 = append(var01, 1)
+	var01 = append(var01, 1)
+
+	for i := 5; i < 10; i++ {
+		var01 = append(var01, i)
+	}
+
+	fmt.Println(var01)
 
 }
 
@@ -48,6 +65,12 @@ func fun08() {
 
 	var03 = var02[0:len(var02)]
 	fmt.Println(var03)
+
+	fmt.Println("----------------- 通过 make 函数构造切片 -----------------")
+	// 容量为10,实际存储为 5, 类型为 []int 的切片
+	var04 := make([]int, 5, 10)
+	fmt.Println(var04)
+	fmt.Printf("%T \n", var04)
 
 }
 
