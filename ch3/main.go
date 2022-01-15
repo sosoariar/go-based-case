@@ -16,9 +16,7 @@ const e = 2.7
 const n5 = iota
 
 func main() {
-	//case01()
-	//case02()
-	case03()
+	case04()
 }
 
 func case01() {
@@ -69,4 +67,14 @@ func case03() {
 	fmt.Println(var01)
 	var02 := "D:\\WorkSpace\\Go\\go-based-case"
 	fmt.Println(var02)
+}
+
+func case04() {
+
+	var var01 byte = 'c'
+	var var02 rune = 'c'
+
+	fmt.Printf("type of var01 : %T ,value of var01 %d \n", var01, var01)
+	fmt.Printf("type of var02 : %T ,value of var01 %d \n", var02, var02)
+
 }

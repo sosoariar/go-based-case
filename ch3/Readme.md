@@ -25,3 +25,8 @@ iota 遇到不需要计数的,使用_替换
 
 无法通过数据大于0,小于0区分 bool.true 或 bool.false
 
+byte 是 int8  的别名
+
+rune 是 int32 的别名
+
+
