@@ -115,13 +115,13 @@ func case06() {
 }
 
 func case07() {
-	var01 := 8
-	switch var01 {
-	case 1:
+	var01 := 3.5
+	switch {
+	case var01 == 1:
 		fmt.Println("A")
-	case 2:
+	case var01 == 2:
 		fmt.Println("B")
-	case 3:
+	case var01 == 3:
 		fmt.Println("C")
 	case var01 >= 4:
 		fmt.Println("D")
