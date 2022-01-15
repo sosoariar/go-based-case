@@ -16,3 +16,7 @@ go build main.go
 ```shell
 go fmt main.go
 ```
+常量
+
+iota 从赋值开始,遇到常量就计数,遇到 const 关键字就重置
+iota 遇到不需要计数的,使用_替换
