@@ -20,3 +20,5 @@ go fmt main.go
 
 iota 从赋值开始,遇到常量就计数,遇到 const 关键字就重置
 iota 遇到不需要计数的,使用_替换
+
+相比于java的 short long 的直译方式,go表达通过字节命名方式 int8 int 16 int32 int64

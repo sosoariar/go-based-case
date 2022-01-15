@@ -16,7 +16,8 @@ const e = 2.7
 const n5 = iota
 
 func main() {
-	case01()
+	//case01()
+	case02()
 }
 
 func case01() {
@@ -51,4 +52,9 @@ func case01() {
 
 	// 常量
 	fmt.Println(pi, e, n1, n4, n5)
+}
+
+func case02() {
+	var var01 = 25
+	fmt.Printf("二进制(binary)表示方式: %b \n", var01)
 }
