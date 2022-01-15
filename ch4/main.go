@@ -3,6 +3,7 @@ package main
 import (
 	"crypto/sha256"
 	"fmt"
+	"sort"
 	"time"
 )
 
@@ -25,7 +26,27 @@ type Employee struct {
 }
 
 func main() {
-	fun10()
+	fun11()
+}
+
+func fun11() {
+
+	var var01 map[string]int
+	fmt.Println(var01 == nil)
+
+	fmt.Println("--------- make 初始化方式 -----------")
+	var01 = make(map[string]int, 10)
+	fmt.Println(var01 == nil)
+
+	var01["java01"] = 69
+	var01["java02"] = 99
+	fmt.Println(var01)
+
+	var02 := map[int]bool{
+		1: true,
+		2: false,
+	}
+	fmt.Println(var02)
 }
 
 func fun09() {
@@ -48,11 +69,17 @@ func fun09() {
 }
 
 func fun10() {
+
 	var01 := []int{1, 2, 3, 4, 5}
 	var02 := make([]int, 5, 5)
 	copy(var02, var01)
 	fmt.Println(var01)
 	fmt.Println(var02)
+
+	var var03 = [...]int{8, 7, 6, 5, 4, 3, 2, 1, 0}
+	sort.Ints(var03[:])
+	fmt.Println(var03)
+
 }
 
 func fun08() {
