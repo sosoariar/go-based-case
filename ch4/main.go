@@ -25,7 +25,7 @@ type Employee struct {
 }
 
 func main() {
-	fun09()
+	fun10()
 }
 
 func fun09() {
@@ -45,6 +45,14 @@ func fun09() {
 	var01 = append(var01, 2, 3, 4)
 	fmt.Println(var01)
 
+}
+
+func fun10() {
+	var01 := []int{1, 2, 3, 4, 5}
+	var02 := make([]int, 5, 5)
+	copy(var02, var01)
+	fmt.Println(var01)
+	fmt.Println(var02)
 }
 
 func fun08() {
