@@ -37,7 +37,7 @@ func fun08() {
 	fmt.Printf("the type of []string{} %T,  \n", var01)
 	fmt.Printf("the type of []string{} %T,  \n", var02)
 
-	var03 := var02[1:4]
+	var03 := var02[1:4] //左闭右开的结果
 	fmt.Println(var03)
 
 }
