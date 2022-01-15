@@ -42,6 +42,13 @@ func fun01() {
 	fmt.Println(arr1)
 	fmt.Println(arr2)
 
+	// 定义时使用初始值列表的方式初始化
+	var cityArray = [4]string{"北京", "上海", "广州", "深圳"}
+	fmt.Println(cityArray)
+
+	var boolArray = [...]bool{true, false, true, false, true}
+	fmt.Println(boolArray)
+
 }
 
 func fun02() {
