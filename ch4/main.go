@@ -49,6 +49,9 @@ func fun01() {
 	var boolArray = [...]bool{true, false, true, false, true}
 	fmt.Println(boolArray)
 
+	var mapArray = [...]int{1: 11, 3: 13, 7: 17}
+	fmt.Println(mapArray)
+
 }
 
 func fun02() {
