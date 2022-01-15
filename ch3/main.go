@@ -41,11 +41,13 @@ func case01() {
 
 	// 类型推断
 	var var10 = "gohoer"
-	fmt.Println(var10)
+	var var11 = 10
+	fmt.Printf("type of var10: %T \n", var10)
+	fmt.Printf("type of var11: %T \n", var11)
 
 	// 短声明方式
-	var11 := "go Programer"
-	fmt.Println(var11)
+	var12 := "go Programer"
+	fmt.Println(var12)
 
 	// 常量
 	fmt.Println(pi, e, n1, n4, n5)
