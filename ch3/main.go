@@ -58,4 +58,6 @@ func case02() {
 	var var01 = 25
 	fmt.Printf("二进制(binary)表示方式: %b \n", var01)
 	fmt.Printf("八进制(octal)表示方式:  %o \n", var01)
+	fmt.Printf("十进制(decimal)表示方式: %d \n", var01)
+	fmt.Printf("十六进制(hex)表示方式: %x \n", var01)
 }
