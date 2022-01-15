@@ -16,7 +16,7 @@ const e = 2.7
 const n5 = iota
 
 func main() {
-	case06()
+	case07()
 }
 
 func case01() {
@@ -95,13 +95,32 @@ func case05() {
 
 func case06() {
 
-	for i := 0; i < 10; i++ {
+	/*	for i := 0; i < 10; i++ {
 		fmt.Println(i)
-	}
+	}*/
 
-	var var01 = 0
-	for ; var01 < 10; var01++ {
-		fmt.Println(var01)
-	}
+	/*	var var01 = 0
+		for ; var01 < 10; var01++ {
+			fmt.Println(var01)
+		}*/
 
+	// break 跳出for循环
+	/*	for var02 := 0; var02<5; var02++ {
+		if var02 == 3{
+			break;
+		}
+		fmt.Println(var02)
+	}*/
+
+}
+
+func case07() {
+	var01 := 3
+	if var01 == 1 {
+		fmt.Println("A")
+	} else if var01 == 2 {
+		fmt.Println("B")
+	} else {
+		fmt.Println("C")
+	}
 }
