@@ -22,6 +22,7 @@ func main() {
 func case01() {
 
 	// 标准声明方式
+	// 声明的变量都有默认初始值
 	var var1 string
 	var var2 int = 100 // 声明的同时指定初始值
 	var var3 bool
