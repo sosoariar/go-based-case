@@ -16,7 +16,7 @@ const e = 2.7
 const n5 = iota
 
 func main() {
-	case07()
+	case08()
 }
 
 func case01() {
@@ -128,4 +128,16 @@ func case07() {
 	default:
 		fmt.Println("无效输入")
 	}
+}
+
+func case08() {
+
+	type newInt int
+	type myInt = int
+
+	var var01 newInt
+	var var02 myInt
+
+	fmt.Printf("type of the var01: %T \n", var01)
+	fmt.Printf("type of the var02: %T \n", var02)
 }

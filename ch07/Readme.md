@@ -1,0 +1,1 @@
+Go中interface 是一种类型
